@@ -31,6 +31,12 @@ class Geeks{
 		     byte d= sc.nextByte();
 		     System.out.println(d);
 
+		 /* 
+         * At this point, the scanner is still on the fourth line at the end
+         * of the byte, so we need to move the scanner to the next line
+         * scans to the end of the previous line which contains the byte. 
+         */
+		     sc.nextLine();
 		     String s = sc.nextLine();
 		     System.out.println(s);
 		    
